@@ -1,12 +1,13 @@
+import { Link } from "react-router-dom"
 export default function Navegation(){
     return(
-        <header>
-            <h1>Rick & Morty</h1>
+        <header className="navegation">
+            <h5>Rick & Morty</h5>
             <nav>
                 <ul>
-                    <li>Home</li>
-                    <li>Characters</li>
-                    <li>Contact</li>
+                    <Link to="/" ><li className="itemsnav">Home</li></Link>
+                   <Link to="/characters"> <li className="itemsnav">Characters</li></Link>
+                   <Link to="/contacto"> <li className="itemsnav">Contact</li></Link>
                 </ul>
             </nav>
         </header>

@@ -1,5 +1,6 @@
 import ListItemHome from "./ListItemHome"
 import "./Home.css";
+import { Link } from "react-router-dom";
 export default function Home() {
 
     return(
@@ -10,8 +11,8 @@ export default function Home() {
             <nav className="navbar">
                 <ul className="botones-home">
 
-                    <ListItemHome dato="Characters" infoPath="/characters"/>
-                    <ListItemHome dato="Contact" infoPath="/contact"/>
+                   <Link to="/characters"> <ListItemHome dato="Characters" infoPath="/characters"/></Link>
+                   <Link to="/contacto"> <ListItemHome dato="Contact" infoPath="/contact"/> </Link>
                     
                 </ul>
             </nav>

@@ -2,6 +2,7 @@ import Navegation from "./Navegation/Navegation"
 import SectionCards from "./SectionCards"
 import Filters from "./Filters"
 import{useState,useEffect} from 'react'
+import { Fragment } from "react"
 
 
 export default function Characters(){
@@ -55,7 +56,7 @@ export default function Characters(){
         
     
            return(
-        <div>
+        <Fragment>
             <Navegation/>
             <section className="section-filters">
             <Filters nombreFiltro="Character Alive" datoFiltro="Alive" muestraValor={mostrarValor}/>
@@ -65,7 +66,7 @@ export default function Characters(){
             <Filters nombreFiltro="Origin Unknown" datoFiltro="unknown" muestraValor={mostrarValor}/>
              </section>
             <SectionCards datos={datos} />
-        </div>
+        </Fragment>
     )
         }
 

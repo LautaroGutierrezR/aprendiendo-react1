@@ -8,7 +8,7 @@ const mostrar =()=>{
 }
 
     return(
-       <button> <li onClick={mostrar} className="boton-inicio">
+       <button> <li  className="boton-inicio">
             {dato}
         </li>
         </button>
